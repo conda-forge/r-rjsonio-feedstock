@@ -10,41 +10,45 @@ package:
 source:
   fn: RJSONIO_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/RJSONIO_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/RJSONIO/RJSONIO_{{ version }}.tar.gz
-
-
+    - {{ cran_mirror }}/src/contrib/RJSONIO_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/RJSONIO/RJSONIO_{{ version }}.tar.gz
   sha256: 119334b7761c6c1c3cec52fa17dbc1b72eaebb520c53e68d873dea147cf48fb7
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
 
   rpaths:
     - lib/R/lib/
     - lib/
-  skip: True  # [win32]
-
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ compiler('cxx') }}        # [unix]
-    - {{ compiler('m2w64_cxx') }}  # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('cxx') }}      # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}sed               # [win]
+    - {{posix}}grep              # [win]
+    - {{posix}}autoconf
+    - {{posix}}automake          # [not win]
+    - {{posix}}automake-wrapper  # [win]
+    - {{posix}}pkg-config
+    - {{posix}}make
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
+
   host:
     - r-base
 
   run:
     - r-base
+    - {{native}}gcc-libs         # [win]
 
 test:
   commands:
-    - $R -e "library('RJSONIO')"  # [not win]
+    - $R -e "library('RJSONIO')"           # [not win]
     - "\"%R%\" -e \"library('RJSONIO')\""  # [win]
-
-
 
 about:
   home: https://CRAN.R-project.org/package=RJSONIO
@@ -65,8 +69,12 @@ about:
   license_family: BSD
   license_file: LICENSE
 
-
-
 extra:
   recipe-maintainers:
+    - johanneskoester
+    - bgruening
+    - daler
+    - jdblischak
+    - cbrueffer
+    - dbast
     - croth1
