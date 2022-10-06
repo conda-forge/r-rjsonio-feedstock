@@ -3,7 +3,7 @@ About r-rjsonio
 
 Home: https://CRAN.R-project.org/package=RJSONIO
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rjsonio-feedstock/blob/main/LICENSE.txt)
 
