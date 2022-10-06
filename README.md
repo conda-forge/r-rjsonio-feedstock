@@ -5,7 +5,7 @@ Home: https://CRAN.R-project.org/package=RJSONIO
 
 Package license: BSD_3_clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rjsonio-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rjsonio-feedstock/blob/main/LICENSE.txt)
 
 Summary: This is a package that allows conversion to and from  data in Javascript object notation (JSON) format. This allows R objects to be inserted into Javascript/ECMAScript/ActionScript code and allows R programmers to read and convert JSON content to R objects. This is an alternative to rjson package. Originally, that was too slow for converting large R objects to JSON and was not extensible.  rjson's performance is now similar to this package, and perhaps slightly faster in some cases. This package uses methods and is readily extensible by defining methods for different classes,  vectorized operations, and C code and callbacks to R functions for deserializing JSON objects to R.  The two packages intentionally share the same basic interface. This package (RJSONIO) has many additional options to allow customizing the generation and processing of JSON content. This package uses libjson rather than implementing yet another JSON parser. The aim is to support other general projects by building on their work, providing feedback and benefit from their ongoing development.
 
@@ -14,10 +14,10 @@ Current build status
 
 
 <table><tr>
-    <td>Drone</td>
+    <td>Travis</td>
     <td>
-      <a href="https://cloud.drone.io/conda-forge/r-rjsonio-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/r-rjsonio-feedstock/master.svg?label=Linux">
+      <a href="https://app.travis-ci.com/conda-forge/r-rjsonio-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-rjsonio-feedstock/main.svg?label=Linux">
       </a>
     </td>
   </tr>
@@ -27,80 +27,73 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main">
           </a>
         </summary>
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_r_base4.0</td>
+              <td>linux_64_r_base4.2</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base4.0" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base4.1" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_r_base4.0</td>
+              <td>linux_aarch64_r_base4.2</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_r_base4.0" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_r_base4.1" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.0</td>
+              <td>linux_ppc64le_r_base4.2</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_r_base4.0</td>
+              <td>osx_64_r_base4.2</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_r_base4.1</td>
+              <td>win_64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.1" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1546&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rjsonio-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -128,23 +121,49 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-rjsonio` can be installed with:
+Once the `conda-forge` channel has been enabled, `r-rjsonio` can be installed with `conda`:
 
 ```
 conda install r-rjsonio
 ```
 
-It is possible to list all of the versions of `r-rjsonio` available on your platform with:
+or with `mamba`:
+
+```
+mamba install r-rjsonio
+```
+
+It is possible to list all of the versions of `r-rjsonio` available on your platform with `conda`:
 
 ```
 conda search r-rjsonio --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search r-rjsonio --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search r-rjsonio --channel conda-forge
+
+# List packages depending on `r-rjsonio`:
+mamba repoquery whoneeds r-rjsonio --channel conda-forge
+
+# List dependencies of `r-rjsonio`:
+mamba repoquery depends r-rjsonio --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -154,10 +173,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
